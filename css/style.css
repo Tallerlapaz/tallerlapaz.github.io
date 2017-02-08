@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+
+
+body {
+	font-size: 14px;
+}
+
+.header {
+	text-align: center;
+	padding: 5%;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 3rem;
+}
+
+h1 {
+	font-size: 6rem;
+}
+
+.header {
+	color: #6F6E6E;
+}
+
+.impact {
+	color: #B0B0B0;
+	padding-left: 10%
+}
+
+.servicios {
+	padding-left: 20%;
+}
+
+.especificos {
+	color: #DC901B;
+	display: none;
+}
+
+li,ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #B0B0B0;
+	font-size: 1.3rem;
+}
+
+a[href="/"]:hover {
+	color: #000;
+}
+
+a[href="/"]:active {
+	color: #000;
+	padding-left: 4em;
+}
