@@ -1,10 +1,11 @@
 @font-face {
-    font-family: 'quicksand-light';
-    src: url('fonts/quicksand-light-webfont.woff') format('woff');
+    font-family: 'quicksandlight';
+    src: url('/font/quicksand-light-webfont.woff2') format('woff2'),
+         url('/font/quicksand-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
 
+}
 
 
 body {
@@ -14,7 +15,7 @@ body {
 .header {
 	text-align: center;
 	padding: 5%;
-	font-family: 'quicksand-light';
+	font-family: 'quicksandlight';
 	font-size: 3rem;
 }
 
