@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+@font-face {
+    font-family: 'quicksand-light';
+    src: url('fonts/quicksand-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 
@@ -9,7 +14,7 @@ body {
 .header {
 	text-align: center;
 	padding: 5%;
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'quicksand-light';
 	font-size: 3rem;
 }
 
