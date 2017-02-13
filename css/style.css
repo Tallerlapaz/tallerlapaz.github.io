@@ -1,20 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
-
-
+@import url('https://fonts.googleapis.com/css?family=Roboto:900');
 
 body {
 	font-size: 14px;
 }
 
 .header {
+	padding-top: 5%;
 	text-align: center;
-	padding: 5%;
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 3rem;
+	display: block;
 }
 
 h1 {
-	font-size: 6rem;
+	font-size: 8rem;
+	font-family: 'Roboto', sans-serif;
 }
 
 .header {
@@ -22,12 +20,14 @@ h1 {
 }
 
 .impact {
+
 	color: #B0B0B0;
 	padding-left: 10%
 }
 
 .servicios {
 	padding-left: 20%;
+	font-family: 'Roboto', sans-serif;
 }
 
 .especificos {
