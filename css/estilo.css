@@ -1,25 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:900');
 
-@font-face {
-    font-family: 'print_clearlyregular';
-    src: url('princ___-webfont.woff2') format('woff2'),
-         url('princ___-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 body {
 	font-size: 14px;
 }
 
 .header {
-	text-transform: uppercase;
-	font-family: 'print_clearlyregular';
 	padding-top: 5%;
 	text-align: center;
 	display: block;
-	color: #6F6E6E;
 }
 
 .we {
@@ -29,15 +17,27 @@ body {
 	padding-left: 10%
 }
 
-.nav1 {
-	padding-left: 20%;
-	font-family: 'Roboto', sans-serif;
+ul,li {
 	list-style-type: none;
 	padding: 0;
 }
 
-a {
+.nav1 {
+	padding-left: 20%;
+	font-family: 'Roboto', sans-serif;
+}
+
+.nav1 > a {
 	text-decoration: none;
 	color: #B0B0B0;
 	font-size: 1.3rem;
+}
+
+div a:hover {
+	color: #000;
+}
+
+div a:active {
+	color: #000;
+	padding-left: 4em;
 }
