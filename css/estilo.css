@@ -206,7 +206,7 @@ div.target {
 }
 .cb-slideshow li div h3 { 
     font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
-    font-size: 6em;
+    font-size: 6em; /*único modificado hasta ahora*/
     padding: 0;
     line-height: 200px; 
 }
