@@ -5,14 +5,14 @@ body {
 }
 
 .header {
-	padding: 10%;
+	padding: 6%;
 	text-align: center;
 	display: block;
 }
 
 svg {
 	max-width: 600px;
-	background-color: rgba(0,0,0,0.05);
+	/*background-color: rgba(0,0,0,0.05);*/
 	z-index: 2;
 	position: relative;
 }
@@ -70,19 +70,18 @@ div.target {
     display: block;
 }
 
-.contenedor {
-	background-color: rgba(255,0,0,0.6);
-}
 
 /* Estilo de slideshow */
 
 .cb-slideshow,
-.cb-slideshow:after { 
-    position: absolute;
-    width: 80%;
-    height: 100%;
-    top: 200px;
-    right: 0px;
+.cb-slideshow:after {
+	font-size: 100%; 
+    position: fixed;
+    width: 60%;
+    height: 60%;
+    top: 30%;
+    right: 20%;
+    left: 20%;
     z-index: 0; 
 }
 .cb-slideshow:after { 
@@ -118,7 +117,7 @@ div.target {
 }
 .cb-slideshow li div h3 { 
     font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
-    font-size: 240px;
+    font-size: 10em;
     padding: 0;
     line-height: 200px; 
 }
