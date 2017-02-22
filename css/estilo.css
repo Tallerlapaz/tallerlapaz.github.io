@@ -21,7 +21,7 @@ svg {
 	font-size: 8rem;
 	font-family: 'Roboto', sans-serif;
 	color: #B0B0B0;
-	padding-left: -40%
+    display: block;
 }
 
 ul,li {
@@ -98,16 +98,22 @@ div.target {
     animation: imageAnimation 15s linear infinite 0s; 
 }*/
 
+#slide {
+    display: block;
+    position: relative;
+    padding: 0;
+    background-color: rgba(255,0,0,0.4);
+}
+
 .cb-slideshow li div { 
     z-index: 1;
     position: absolute;
-    bottom: 30px;
-    left: 0px;
-    width: 100%;
-    text-align: center;
+    left: 70px;
+    max-width: 300px;
     opacity: 0;
     color: #000;
-    animation: titleAnimation 15s linear infinite 0s; 
+    animation: titleAnimation 15s linear infinite 0s;
+     
 }
 .cb-slideshow li div h3 { 
     font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
