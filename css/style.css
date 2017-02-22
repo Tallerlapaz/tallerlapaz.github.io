@@ -28,7 +28,9 @@ svg {
 
 .contenedor {
 	position: relative;
-	padding: 10%;
+	width: 600px;
+	left: 50%;
+	margin-left: -300px;
 }
 
 .we {
