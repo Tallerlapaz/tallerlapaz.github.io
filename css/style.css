@@ -10,12 +10,6 @@ body {
 	display: block;
 }
 
-.footer {
-	text-align: center;
-	position: absolute;
-	vertical-align: bottom;
-}
-
 svg {
 	max-width: 600px;
 	/*background-color: rgba(0,0,0,0.05);*/
@@ -25,17 +19,17 @@ svg {
 
 .contenedor {
 	position: relative;
-	padding-left: 10%;
+	padding: 0 auto;
 }
 
 .we {
-	font-size: 8rem;
-	line-height: 1%;
+	font-size: 6rem;
+	line-height: 0px;
 	font-family: 'Roboto', sans-serif;
 	color: #B0B0B0;
-	position: absolute;
-	left: 2%;
-	display: inline-block;
+	position: relative;
+	top: 110px;
+	display: inline;
 }
 
 ul,li {
@@ -45,9 +39,9 @@ ul,li {
 
 .slide {
 	position: relative;
-	display: inline-block;
+	display: inline;
 	vertical-align: top;
-	left: 150px;
+	left: 180px;
 	float: left;
 }
 
@@ -61,7 +55,7 @@ ul,li {
 }
 .cb-slideshow li div h3 { 
     font-family: 'Roboto', sans-serif;
-    font-size: 8rem;
+    font-size: 6rem;
     padding: 0;
     line-height: 0px; 
 }
