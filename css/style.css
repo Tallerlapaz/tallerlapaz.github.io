@@ -10,6 +10,15 @@ body {
 	display: block;
 }
 
+.footer {
+	position: fixed;
+	bottom: 0px;
+	max-width: 350px;
+	text-align: center;
+	left: 50%;
+	margin-left: -175px;
+}
+
 svg {
 	max-width: 600px;
 	/*background-color: rgba(0,0,0,0.05);*/
@@ -19,7 +28,7 @@ svg {
 
 .contenedor {
 	position: relative;
-	padding: 0 auto;
+	padding: 10%;
 }
 
 .we {
@@ -28,7 +37,7 @@ svg {
 	font-family: 'Roboto', sans-serif;
 	color: #B0B0B0;
 	position: relative;
-	top: 110px;
+	top: 150px;
 	display: inline;
 }
 
@@ -42,7 +51,6 @@ ul,li {
 	display: inline;
 	vertical-align: top;
 	left: 180px;
-	float: left;
 }
 
 .cb-slideshow li div { 
