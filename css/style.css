@@ -5,52 +5,74 @@ body {
 }
 
 .header {
-	padding-top: 5%;
+	padding-top: 6%;
 	text-align: center;
 	display: block;
 }
 
-h1 {
-	font-size: 8rem;
-	font-family: 'Roboto', sans-serif;
+svg {
+	max-width: 600px;
+	/*background-color: rgba(0,0,0,0.05);*/
+	z-index: 2;
+	position: relative;
 }
 
-.header {
-	color: #6F6E6E;
+.contenedor {
+	position: relative;
 }
 
 .we {
-
-	color: #B0B0B0;
-	padding-left: 10%
-}
-
-.servicios {
-	padding-left: 20%;
+	font-size: 8rem;
+	line-height: 1%;
 	font-family: 'Roboto', sans-serif;
+	color: #B0B0B0;
+	position: static;
+	left: 2%;
+	display: inline-block;
 }
 
-.especificos {
-	color: #DC901B;
-	display: none;
-}
-
-li,ul {
+ul,li {
 	list-style-type: none;
 	padding: 0;
 }
 
-a {
-	text-decoration: none;
-	color: #B0B0B0;
-	font-size: 1.3rem;
+.slide {
+	position: absolute;
+	left:30%;
+	display: inline-block;
+	float: left;
 }
 
-a[href="/"]:hover {
-	color: #000;
+.cb-slideshow li div { 
+    z-index: 1;
+    position: absolute;
+    opacity: 0;
+    color: #000;
+    animation: titleAnimation 15s linear infinite 0s;
+     
+}
+.cb-slideshow li div h3 { 
+    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10em;
+    padding: 0;
+    line-height: 200px; 
 }
 
-a[href="/"]:active {
-	color: #000;
-	padding-left: 4em;
+.cb-slideshow li:nth-child(2) div { 
+    animation-delay: 5s; 
+}
+.cb-slideshow li:nth-child(3) div { 
+    animation-delay: 10s; 
+}
+
+@keyframes titleAnimation { 
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+.no-cssanimations .cb-slideshow li span{
+	opacity: 1;
 }

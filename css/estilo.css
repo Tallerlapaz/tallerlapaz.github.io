@@ -5,7 +5,7 @@ body {
 }
 
 .header {
-	padding: 6%;
+	padding-top: 6%;
 	text-align: center;
 	display: block;
 }
@@ -22,6 +22,7 @@ svg {
 	font-family: 'Roboto', sans-serif;
 	color: #B0B0B0;
     display: block;
+    float: left;
 }
 
 ul,li {
@@ -100,6 +101,7 @@ div.target {
 
 #slide {
     display: block;
+    float: left;
     position: relative;
     padding: 0;
     background-color: rgba(255,0,0,0.4);
@@ -108,8 +110,6 @@ div.target {
 .cb-slideshow li div { 
     z-index: 1;
     position: absolute;
-    left: 70px;
-    max-width: 300px;
     opacity: 0;
     color: #000;
     animation: titleAnimation 15s linear infinite 0s;
@@ -129,14 +129,6 @@ div.target {
     animation-delay: 10s; 
 }
 
-@keyframes imageAnimation { 
-    0% { opacity: 0; animation-timing-function: ease-in; }
-    8% { opacity: 1; animation-timing-function: ease-out; }
-    17% { opacity: 1 }
-    25% { opacity: 0 }
-    100% { opacity: 0 }
-}
-
 @keyframes titleAnimation { 
     0% { opacity: 0 }
     8% { opacity: 1 }
@@ -149,6 +141,7 @@ div.target {
 	opacity: 1;
 }
 
-@media (max-width: 600px) {
+@media (max-height: 900px) {
+
 
 }
