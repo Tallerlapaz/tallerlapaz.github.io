@@ -43,7 +43,7 @@ svg {
 	font-family: 'Roboto', sans-serif;
 	color: #B0B0B0;
 	position: relative;
-	top: 150px;
+	top: 147px;
 	display: inline;
 }
 
@@ -91,4 +91,40 @@ ul,li {
 
 .no-cssanimations .cb-slideshow li span{
 	opacity: 1;
+}
+
+
+@media (max-width: 600px) {
+
+	body {
+		font-size: 12px;
+	}
+
+	svg {
+		max-width: 250px;
+	}
+
+	.we {
+		font-size: 4rem;
+		top: 100px;
+	}
+
+	.cb-slideshow li div h3 {
+		font-size: 4rem;
+	}
+
+	.slide {
+		left: 120px;
+	}
+
+	.contenedor {
+		position: fixed;
+		width: 400p	x;
+		left: 50%;
+		margin-left: -150px;
+		height: 200px;
+		top: 50%;
+		margin-top: -100px;
+	}
+
 }
