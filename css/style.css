@@ -20,17 +20,21 @@ body {
 }
 
 svg {
-	max-width: 600px;
+	max-width: 350px;
 	/*background-color: rgba(0,0,0,0.05);*/
 	z-index: 2;
 	position: relative;
 }
 
 .contenedor {
-	position: relative;
-	width: 600px;
+	position: fixed;
+	width: 400p	x;
 	left: 50%;
-	margin-left: -300px;
+	margin-left: -250px;
+	height: 200px;
+	top: 50%;
+	margin-top: -100px;
+
 }
 
 .we {
@@ -50,24 +54,24 @@ ul,li {
 
 .slide {
 	position: relative;
-	display: inline;
 	vertical-align: top;
 	left: 180px;
 }
 
 .cb-slideshow li div { 
+	display: inline;
+	position: absolute;
     z-index: 1;
-    position: absolute;
     opacity: 0;
     color: #000;
-    animation: titleAnimation 6s linear infinite 0s;
-     
+    animation: titleAnimation 6s linear infinite 0s;     
 }
+
 .cb-slideshow li div h3 { 
     font-family: 'Roboto', sans-serif;
     font-size: 6rem;
     padding: 0;
-    line-height: 0px; 
+    line-height: 0px;
 }
 
 .cb-slideshow li:nth-child(2) div { 
