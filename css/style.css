@@ -30,7 +30,7 @@ svg {
 	position: fixed;
 	width: 400p	x;
 	left: 50%;
-	margin-left: -250px;
+	margin-left: -220px;
 	height: 200px;
 	top: 50%;
 	margin-top: -100px;
@@ -94,6 +94,9 @@ ul,li {
 }
 
 
+/* Sección de queries */
+
+
 @media (max-width: 600px) {
 
 	body {
@@ -121,7 +124,7 @@ ul,li {
 		position: fixed;
 		width: 400p	x;
 		left: 50%;
-		margin-left: -135px;
+		margin-left: -125px;
 		height: 200px;
 		top: 50%;
 		margin-top: -90px;
