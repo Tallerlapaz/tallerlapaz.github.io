@@ -1,0 +1,7 @@
+input {
+	display: block;
+}
+
+input[name="_gotcha"] {
+	display:none
+}
