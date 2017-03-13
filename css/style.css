@@ -14,12 +14,27 @@ body {
 	color: #B0B0B0;
 	position: fixed;
 	bottom: -10px;
-	max-width: 500px;
+	max-width: 550px;
 	text-align: center;
 	left: 50%;
-	margin-left: -250px;
+	margin-left: -275px;
 	padding: 0;
 	border-top: 0.2px solid #B0B0B0;
+}
+
+.contacto {
+	color: #dfdfdf;
+	text-decoration: none;
+	position: absolute;
+	font-size: 1.2rem;
+	bottom: -105%;
+	width: 50px;
+	margin-left: -25px;
+	left: 50%;
+}
+
+a:hover {
+	color: #d00;
 }
 
 svg {
@@ -31,7 +46,7 @@ svg {
 
 .contenedor {
 	position: fixed;
-	width: 400p	x;
+	width: 400px;
 	left: 50%;
 	margin-left: -220px;
 	height: 200px;
@@ -139,10 +154,14 @@ ul,li {
 	}
 
 	.contacto {
-		position: fixed;
-		max-width: 200px;
-		margin-left: -60px;
-		bottom: 70px
+		bottom: -20%;
+		margin-left: -85px;
 	}
 
+}
+
+@media (max-height: 400px) {
+	.contacto {
+		bottom: 10%;
+	}
 }
