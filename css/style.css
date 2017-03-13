@@ -11,13 +11,15 @@ body {
 }
 
 .footer {
+	color: #B0B0B0;
 	position: fixed;
-	bottom: 0px;
+	bottom: -10px;
 	max-width: 500px;
 	text-align: center;
 	left: 50%;
 	margin-left: -250px;
 	padding: 0;
+	border-top: 0.2px solid #B0B0B0;
 }
 
 svg {
@@ -98,7 +100,7 @@ ul,li {
 /* Sección de queries */
 
 
-@media (max-width: 600px) {
+@media (max-width: 600px), (max-height: 600px) {
 
 	body {
 		font-size: 12px;
