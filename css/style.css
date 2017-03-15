@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:900');
+@import url('https://fonts.googleapis.com/css?family=Oranienbaum');
+
 
 body {
 	font-size: 14px;
@@ -11,14 +13,14 @@ body {
 }
 
 .footer {
+	text-align: center;
+	font-family: 'Oranienbaum', serif;
 	color: #B0B0B0;
 	position: fixed;
 	bottom: -10px;
-	max-width: 550px;
-	text-align: center;
+	width: 520px;
 	left: 50%;
-	margin-left: -275px;
-	padding: 0;
+	margin-left: -260px;
 }
 
 .contacto {
