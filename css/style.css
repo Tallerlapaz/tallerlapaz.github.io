@@ -5,7 +5,7 @@ body {
 }
 
 .header {
-	padding-top: 6%;
+	padding-top: 9%;
 	text-align: center;
 	display: block;
 }
@@ -19,17 +19,15 @@ body {
 	left: 50%;
 	margin-left: -275px;
 	padding: 0;
-	border-top: 0.2px solid #B0B0B0;
 }
 
 .contacto {
 	color: #dfdfdf;
 	text-decoration: none;
 	position: absolute;
-	font-size: 1.2rem;
+	font-size: 1.8rem;
 	bottom: -105%;
 	width: 50px;
-	margin-left: -25px;
 	left: 50%;
 }
 
