@@ -1,0 +1,257 @@
+/* Fuentes */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:900');
+@import url('https://fonts.googleapis.com/css?family=Oranienbaum');
+
+/* Estilo del documento y estilos globales*/
+
+body {
+	font-size: 14px;
+}
+
+.wrapper {
+	position: relative;
+	min-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover, a:focus {
+	color: #CC2229;
+}
+
+/* Estilo del header */
+
+.header {
+	margin-top: 180px;
+	margin-bottom: 130px;
+	display: block;
+	width: 320px;
+	position: relative;
+	left: 50%;
+	margin-left: -160px;	
+}
+
+/* Estilo de bloque de animación "slide" */
+
+.slide {
+	display: block;
+	position: relative;
+	width: 500px;
+	left: 50%;
+	margin-left: -170px;
+	font-size: 3rem;
+	line-height: 0px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.slide:hover li div, .slide:focus li div {
+	-webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.slide li div a{
+	color: #000;
+}
+
+.slide:hover li div a, .slide:focus li div a {
+	color: #CC2229;
+}
+
+/* Estilo y Animación de elemento "we"*/
+
+.we {
+	color: #B0B0B0;
+	position: absolute;
+	-webkit-animation: weanimation 2s linear 1;
+    -moz-animation: weanimation 2s linear 1;
+    -o-animation: weanimation 2s linear 1;
+	animation: weanimation 2s linear 1;
+}
+
+@keyframes weanimation {
+	from { opacity: 0; }
+	to { opacity: 1; } 
+}
+
+@-moz-keyframes weanimation {
+	from { opacity: 0; }
+	to { opacity: 1; } 
+}
+
+@-webkit-keyframes weanimation {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+@-o-keyframes weanimation {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+/*Estilo y animación de "slideshow"*/
+
+ul,li {
+	list-style-type: none;
+	padding: 0;
+}
+
+.cb-slideshow li div { 
+	position: absolute;
+    z-index: 1;
+    opacity: 0;
+    left: 125px;
+    /*color: #000;*/
+    -webkit-animation: titleAnimation 6s linear infinite 0s;
+    -moz-animation: titleAnimation 6s linear infinite 0s;
+    -o-animation: titleAnimation 6s linear infinite 0s;
+    animation: titleAnimation 6s linear infinite 0s;
+}
+
+.cb-slideshow li div h3 { 
+    padding: 0;
+    left: 50px;
+}
+
+.cb-slideshow li:first-child div { 
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.cb-slideshow li:nth-child(2) div { 
+    -webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
+}
+
+.cb-slideshow li:nth-child(3) div { 
+    -webkit-animation-delay: 5s;
+    -moz-animation-delay: 5s;
+    -o-animation-delay: 5s;
+    animation-delay: 5s;
+}
+
+@keyframes titleAnimation { 
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@-moz-keyframes titleAnimation {
+	0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@-webkit-keyframes titleAnimation {
+	0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@-o-keyframes titleAnimation {
+	0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+.no-cssanimations .cb-slideshow li span{
+	opacity: 1;
+}
+
+/* Estilo de sección de contacto */
+
+.contacto {
+	display: block;
+	position: relative;
+	width: 500px;
+	left: 50%;
+	margin-left: -253px;
+	text-align: center;
+	padding-top: 300px;
+	padding-bottom: 150px;
+}
+
+.email {
+	display: inline-block;
+	color: #dfdfdf;
+	text-decoration: none;
+	font-size: 1.8rem;
+	cursor: pointer;
+}
+
+.fa {
+	color: #dfdfdf;
+	display: inline-block;
+	margin-top: 2px;
+	margin-right: 2px;
+}
+
+.fa:hover, .fa:focus {
+	color: #CC2229;
+}
+
+/* Estilo del footer */
+
+.footer {
+	font-family: 'Oranienbaum', serif;
+	text-align: center;
+	color: #dfdfdf;
+	position: relative;
+	bottom: 0;
+	height: 35px;
+	width: 600px;
+	left: 50%;
+	margin-left: -300px;
+}
+
+/* Modal de enviar e-mail */
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: #CC2229;
+	background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+	background-color: #B0B0B0;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+}
+
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover, .close:focus {
+	color: #CC2229;
+	text-decoration: none;
+	cursor: pointer;
+}
