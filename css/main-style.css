@@ -34,6 +34,60 @@ a:hover, a:focus {
 	margin-left: -160px;	
 }
 
+/* Dropdown Button */
+
+.dropdown {
+	padding: 2%;
+}
+
+
+#dropbtn {
+    color: #dfdfdf;
+    padding: 6px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+#dropbtn:hover, #dropbtn:focus {
+    color: #CC2229;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    text-align: center;
+    background-color: #fff;
+    min-width: 90px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	font-family: 'Oranienbaum', serif;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #B0B0B0;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1; color: #CC2229;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+/* ------------------------------------- */
 /* Estilo de bloque de animación "slide" */
 
 .slide {
@@ -220,38 +274,62 @@ ul,li {
 	margin-left: -300px;
 }
 
-/* Modal de enviar e-mail */
+/* Estilo del formulario */
 
-.modal {
-	display: none;
-	position: fixed;
-	z-index: 1000;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	overflow: auto;
-	background-color: #CC2229;
-	background-color: rgba(0,0,0,0.4);
+.contenedor-contacto {
+	text-align: center;
+	-webkit-animation: contact-animation 2s linear 1;
+    -moz-animation: contact-animation 2s linear 1;
+    -o-animation: contact-animation 2s linear 1;
+	animation: contact-animation 2s linear 1;
 }
 
-.modal-content {
-	background-color: #B0B0B0;
-	margin: 15% auto;
-	padding: 20px;
-	border: 1px solid #888;
-	width: 80%;
+@keyframes contact-animation {
+	from { opacity: 0; }
+	to { opacity: 1; } 
 }
 
-.close {
-	color: #aaa;
-	float: right;
-	font-size: 28px;
-	font-weight: bold;
+@-moz-keyframes contact-animation {
+	from { opacity: 0; }
+	to { opacity: 1; } 
 }
 
-.close:hover, .close:focus {
-	color: #CC2229;
-	text-decoration: none;
-	cursor: pointer;
+@-webkit-keyframes contact-animation {
+	from { opacity: 0; }
+	to { opacity: 1; }
 }
+
+@-o-keyframes contact-animation {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+h1 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5rem;
+}
+
+input {
+	display: inline-block;
+	height: 20px;
+	width: 145px; 
+	margin-top: 20px;
+}
+
+textarea {
+	display: block;
+	margin-top: 30px;
+	min-height: 200px;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+input[name="_gotcha"] {
+	display:none
+}
+
+input[type="submit"]:hover {
+	color: #d00;
+} 
