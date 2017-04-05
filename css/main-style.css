@@ -5,6 +5,15 @@
 
 /* Estilo del documento y estilos globales*/
 
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 body {
 	font-size: 14px;
 }
@@ -294,6 +303,7 @@ ul,li {
 	to { opacity: 1; } 
 }
 
+<<<<<<< HEAD
 @-webkit-keyframes contact-animation {
 	from { opacity: 0; }
 	to { opacity: 1; }
@@ -333,3 +343,10 @@ input[name="_gotcha"] {
 input[type="submit"]:hover {
 	color: #d00;
 } 
+=======
+.close:hover, .close:focus {
+	color: #CC2229;
+	text-decoration: none;
+	cursor: pointer;
+}
+>>>>>>> origin/master
