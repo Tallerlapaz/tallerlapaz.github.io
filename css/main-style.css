@@ -73,6 +73,7 @@ a:hover, a:focus {
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
+    background: rgba(255,255,255,0.4);
     position: absolute;
     text-align: center;
     min-width: 100px;
@@ -89,7 +90,7 @@ a:hover, a:focus {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1; color: #CC2229;}
+.dropdown-content a:hover {background-color: rgba(200,200,200,0.4); color: #CC2229;}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
