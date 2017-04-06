@@ -90,7 +90,7 @@ a:hover, a:focus {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: rgba(200,200,200,0.4); color: #CC2229;}
+.dropdown-content a:hover, .dropdown-content a:focus {background-color: rgba(200,200,200,0.4); color: #CC2229;}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
@@ -324,6 +324,7 @@ input {
 	height: 20px;
 	width: 145px; 
 	margin-top: 20px;
+	border-radius: 5px;
 }
 
 textarea {
@@ -333,20 +334,22 @@ textarea {
 	width: 300px;
 	margin-left: auto;
 	margin-right: auto;
-
+	border-radius: 7px 7px 1px 7px;
 }
 
 input[name="_gotcha"] {
 	display:none
 }
 
-input[type="submit"]:hover {
-	color: #d00;
+input[type="submit"] {
+	color: #fff;
+	background-color: #B0B0B0;
+	max-width: 60px;
+	min-height: 30px;
+	border-radius: 2px;
 } 
-=======
-.close:hover, .close:focus {
-	color: #CC2229;
-	text-decoration: none;
-	cursor: pointer;
-}
->>>>>>> origin/master
+
+input[type="submit"]:hover, input[type="submit"]:focus {
+	color: #d00;
+	background-color: #fff;
+} 
