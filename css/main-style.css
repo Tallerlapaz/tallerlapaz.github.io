@@ -3,7 +3,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:900');
 @import url('https://fonts.googleapis.com/css?family=Oranienbaum');
 
+/**/
 /* Estilo del documento y estilos globales*/
+/**/
 
 html,body
 {
@@ -31,7 +33,9 @@ a:hover, a:focus {
 	color: #CC2229;
 }
 
+/**/
 /* Estilo del header */
+/**/
 
 .header {
 	margin-top: 180px;
@@ -97,7 +101,7 @@ a:hover, a:focus {
 .show {display:block;}
 
 
-/* ------------------------------------- */
+/**/
 /* Estilo de bloque de animación "slide" */
 
 .slide {
@@ -169,7 +173,6 @@ ul,li {
     z-index: 1;
     opacity: 0;
     left: 125px;
-    /*color: #000;*/
     -webkit-animation: titleAnimation 6s linear infinite 0s;
     -moz-animation: titleAnimation 6s linear infinite 0s;
     -o-animation: titleAnimation 6s linear infinite 0s;
@@ -238,7 +241,9 @@ ul,li {
 	opacity: 1;
 }
 
+/**/
 /* Estilo de sección de contacto */
+/**/
 
 .contacto {
 	display: block;
@@ -314,6 +319,16 @@ ul,li {
 	to { opacity: 1; }
 }
 
+.contenedor-contacto > div {
+	display: inline-block;
+	vertical-align: middle;
+	width: 40%;
+}
+
+.formulario {
+	text-align: center;
+}
+
 h1 {
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.5rem;
@@ -346,10 +361,18 @@ input[type="submit"] {
 	background-color: #B0B0B0;
 	max-width: 60px;
 	min-height: 30px;
-	border-radius: 2px;
+	border-radius: 5px;
 } 
 
 input[type="submit"]:hover, input[type="submit"]:focus {
 	color: #d00;
 	background-color: #fff;
 } 
+
+/* Estilo de mapa */
+
+.gmap {
+	width: 400px;
+	height: 450px;
+
+}

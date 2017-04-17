@@ -18,3 +18,18 @@ window.onclick = function(event) {
     }
   }
 }
+
+
+//Mapa//
+
+function myMap() {
+
+	var myCenter = new google.maps.LatLng(20.672000, -103.3763865);
+	var mapCanvas = document.getElementById("map");
+	var mapOptions = {center: myCenter, zoom: 14};
+	var map = new google.maps.Map(mapCanvas, mapOptions);
+	var marker = new google.maps.Marker({position:myCenter, animation: google.maps.Animation.DROP});
+  	marker.setMap(map);
+}
+
+/*20.672065,-103.3785900,17z*/
