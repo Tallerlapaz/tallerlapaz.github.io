@@ -24,12 +24,24 @@ window.onclick = function(event) {
 
 function myMap() {
 
-	var myCenter = new google.maps.LatLng(20.672000, -103.3763865);
+	var myCenter = new google.maps.LatLng(20.671900, -103.3765865);
 	var mapCanvas = document.getElementById("map");
-	var mapOptions = {center: myCenter, zoom: 14};
+	var mapOptions = {center: myCenter, 
+      zoom: 14, 
+      mapTypeControl: true,
+      mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU, 
+      position: google.maps.ControlPosition.TOP_RIGHT,
+      },
+      /*mapTypeId:google.maps.MapTypeId.HYBRID*/
+    };
 	var map = new google.maps.Map(mapCanvas, mapOptions);
 	var marker = new google.maps.Marker({position:myCenter, animation: google.maps.Animation.DROP});
-  	marker.setMap(map);
-}
+  marker.setMap(map);
+  google.maps.event.addListener(marker,'click',function() {
+    var infowindow = new google.maps.InfoWindow({
+      content:"Av. de la Paz 2361-A"
+    });
+  infowindow.open(map,marker);
+  })
 
-/*20.672065,-103.3785900,17z*/
+}

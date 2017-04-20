@@ -33,6 +33,10 @@ a:hover, a:focus {
 	color: #CC2229;
 }
 
+p {
+	font-family: 'Oranienbaum', serif;
+}
+
 /**/
 /* Estilo del header */
 /**/
@@ -320,16 +324,20 @@ ul,li {
 }
 
 .contenedor-contacto > div {
+
 	display: inline-block;
 	vertical-align: middle;
-	width: 40%;
+	width: 45%;
+	color: #B0B0B0;
 }
 
 .formulario {
 	text-align: center;
+	width: 80%;
 }
 
 h1 {
+	padding-top: 0;
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.5rem;
 }
@@ -337,7 +345,7 @@ h1 {
 input {
 	display: inline-block;
 	height: 20px;
-	width: 145px; 
+	width: 47%; 
 	margin-top: 20px;
 	border-radius: 5px;
 }
@@ -345,8 +353,8 @@ input {
 textarea {
 	display: block;
 	margin-top: 30px;
-	min-height: 200px;
-	width: 300px;
+	min-height: 220px;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 7px 7px 1px 7px;
@@ -372,7 +380,7 @@ input[type="submit"]:hover, input[type="submit"]:focus {
 /* Estilo de mapa */
 
 .gmap {
-	width: 400px;
-	height: 450px;
-
+	display: inline-block;
+	width: 80%;
+	height: 400px;
 }
